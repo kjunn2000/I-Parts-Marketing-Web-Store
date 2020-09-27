@@ -1,0 +1,31 @@
+.loginForm .app {
+    background-color: black;
+    height:88.6vh;
+    
+}
+
+.loginForm .formBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius:3px;
+    width: 500px ; 
+    height:400px ;
+    padding:10px;
+    box-shadow:0 4px 8px 0 #FFFFFF, 0 6px 20px 0 #FFFFFF;
+}
+
+@media (max-width:720px) {
+
+    .loginForm .formBlock {
+ 
+        width:300px;
+        height: 400px ; 
+        padding:10px;
+    }
+
+    .loginForm .app {
+        height:90.6vh;
+    }
+}

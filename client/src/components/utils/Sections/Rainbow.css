@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.app {
+    padding:0px;
+    height:auto;
+    padding-top :60px;
+
+}
+
+ .formTitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size:20pt;
+    text-align: center;
+}
+
+ .heroPart {
+    height:auto;
+    position:relative;
+}
+
+
+ .heroPart .back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ .heroPart .back .left {
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(to right top, #fa292a, #e85d20, #d67a28, #c58f3f, #b89f5d);
+
+}
+
+ .heroPart .back .right {
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, #b89f5d, #939961, #759069, #618470, #5a7670);
+
+}
+
+ .heroPart .front{
+    min-height:100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+}
+
+
+ .heroPart .front .hero{
+    background-color: white;
+    height:85vh;
+    width: 90%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.7;        /* Safari 1.x */
+    opacity: 0.75;            /* Good browsers */
+    text-align: left;
+    transition:1s all;
+    border-radius: 10px;
+    
+
+}
+
+ .heroPart .front .hero:hover{
+
+    opacity: 0.9;
+
+}
+
+
+.uploadForm .heroPart .back .left {
+    min-height:150vh;
+
+}
+
+.uploadForm .heroPart .back .right {
+    min-height:150vh;
+
+}
+
+
+.uploadForm .heroPart .front{
+    min-height:150vh;
+}
+
+.uploadForm .heroPart .front .hero{
+    height:90vh;
+
+}
+.cartForm {
+    width:75%;
+    margin: 3rem auto;
+}
+
+.cartForm .checkOutImg {
+    width:80px;
+}
+
+@media (max-width:720px) {
+
+
+    
+     .heroPart .back .left {
+        min-height:100vh;
+
+    }
+
+     .heroPart .back .right {
+        min-height:100vh;
+    }
+
+     .heroPart .front{
+        height:100vh;
+    }
+
+     .heroPart .front .hero{
+        width: 95%;
+
+    }
+
+    .app .form{
+        width:200px;
+    
+    }
+
+    th {
+        font-size:9pt;
+    }
+
+    .uploadForm .heroPart .back .left {
+        min-height:130vh;
+
+    }
+
+    .uploadForm .heroPart .back .right {
+        min-height:130vh;
+
+    }
+
+
+    .uploadForm .heroPart .front{
+        min-height:130vh;
+    }
+
+    .uploadForm .heroPart .front .hero{
+        padding:20px;
+
+    }
+    .cartForm {
+        padding:10px;
+        width:100%;
+        margin:0;
+    }
+
+    .cartForm .checkOutImg {
+        width:45px;
+    }
+    
+    .cartForm .removeButton {
+        width:75px;
+    }
+
+}

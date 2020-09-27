@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.landingPage .heroPart {
+    position: relative;
+}
+.landingPage .heroBack {
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    height:100vh;
+}
+
+.landingPage .heroBackLeft {
+    position: relative;
+    background-image: url('../../../../assets/Car\(VW\).PNG');
+    background-size: cover;
+}
+
+.landingPage .heroBackLeft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:#B89F5D;
+    opacity: 0.7;
+    
+}
+
+.landingPage .heroBackRight {
+    background-color: #FA292A;
+}
+.landingPage .heroTitle {
+    color:white;
+    position:absolute;
+    font-size:60pt;
+    font-family: 'Libre Baskerville', serif;
+    left:33%;
+    top:30%;
+    text-shadow: 2px 2px white;
+    z-index:2;
+}
+.landingPage .heroTitle button a {
+    color:white;
+}
+.landingPage .heroTitle button {
+    color:white;
+    font-size:26pt;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius:10px;
+    transition:0.5s all ;
+    padding:10px;   
+    cursor:pointer;
+    
+}
+.landingPage .heroTitle button:hover a {
+    color:#5A7670;
+}
+.landingPage .heroTitle button:hover {
+    font-size:30pt;
+    background-color: whitesmoke;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  
+    -moz-opacity: 0.5;         
+    -khtml-opacity: 0.7;     
+    opacity: 0.7;             
+
+    
+}
+.landingPage .about {
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    height:auto;
+}
+.landingPage .aboutLeft{
+    height:50vh;
+    padding:50px;
+    background-color: whitesmoke;
+}
+.landingPage .aboutLeft h2{
+    font-family: 'Courgette', cursive;
+    font-size: 20pt;
+    text-align:center;
+}
+.landingPage .aboutLeft p{
+    font-family: 'Courgette', cursive;
+    font-size: 16pt;
+    text-align:justify;
+}
+.landingPage .aboutRight {
+    position: relative;
+    background-image: url('../../../../assets/Car\(Ferrari\).jpg');
+    background-size: cover;
+}
+
+.landingPage .aboutRight::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background:#5A7670;
+    opacity: 0.85;
+    
+}
+.landingPage .product{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:"productAreaLeft productAreaLeft productAreaRight"
+                        "productText     productText     productAreaRight"   ;
+}
+.landingPage .productAreaLeft{
+    grid-area : productAreaLeft;
+    height:50vh;
+    background-image: url('../../../../assets/Car\(Benz\).jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.landingPage .productAreaLeft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background:#b6a493;
+    opacity: 0.8;
+    
+}
+
+.landingPage .productAreaRight {
+    grid-area : productAreaRight;
+    position:relative;
+    width:100%;
+}
+
+.landingPage .productAreaRight .video-container {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.landingPage .productAreaRight video {
+    object-fit: cover;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landingPage .productAreaRight .video-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 421px;
+    height: 100%;
+    background:pink;
+    opacity: 0.8;
+    
+} 
+
+
+ .landingPage .productText{
+    grid-area :productText; 
+    height:50vh;
+    background-color: whitesmoke;
+    padding:50px;
+    
+ }
+
+ .landingPage .productText h2{
+    font-family: 'Courgette', cursive;
+    font-size: 20pt;
+    text-align:center;
+}
+.landingPage .productText p{
+    font-family: 'Courgette', cursive;
+    font-size: 16pt;
+    text-align:justify;
+}
+.landingPage .productText button{
+    float:right;
+    padding:10px;
+    transition:0.4s all;
+    background-color: transparent;
+    border:1px solid #FA292A;
+    border-radius:10px;
+}
+.landingPage .productText button a{
+    font-weight:bold;
+    color:#FA292A;
+    font-size: 12pt;
+    transition:0.4s all;
+}
+.landingPage .productText button:hover{
+    background-color: #FA292A;
+}
+.landingPage .productText button:hover a{
+    color:whitesmoke;
+}
+.landingPage .productText button a:hover{
+    font-size: 15pt;
+}
+.weeklyProductTitle {
+    font-family: 'Courgette', cursive;
+    letter-spacing: 10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.productContainer {
+    cursor: pointer;
+    position: relative;
+}
+
+.bestprice , .newarrival{
+    position: absolute;
+    transform: translate(-140px ,-25px);
+    width:100px;
+    height:100px;
+    z-index: 1;
+}
+.landingPage .weekly {
+    text-align:center;
+    justify-content: center;
+}
+
+.landingPage .weeklyProduct{
+    width:100%;
+    padding:100px;
+    text-align:center;
+    justify-content: center;
+
+}
+
+.landingPage .new{
+    background-image: linear-gradient(to bottom, #f0e68c, #eeeda1, #edf3b5, #eef9c9, #f2fedc);
+}
+
+.landingPage .best{
+    background-image: linear-gradient(to top, #c3fcf1, #cdfdea, #d9fee3, #e6fedf, #f2fedc);
+}
+
+@media (max-width:720px) {
+    .landingPage .heroBackLeft {
+        background-color: #FA292A;
+        background-image: none;
+    }
+    .landingPage .heroBackLeft::after {
+        background:none;
+    }
+    .landingPage .heroBackRight {
+        position: relative;
+        background-image: url('../../../../assets/Car\(VW\).PNG');
+        background-size: cover;
+    }
+
+    .landingPage .heroBackRight::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background:#B89F5D;
+        opacity: 0.7;
+        
+    }
+
+    .landingPage .heroTitle {
+        font-size:40pt;
+        left:24%;
+
+    }
+    .landingPage .heroTitle button {
+        font-size:16pt;
+        
+    }
+    .landingPage .heroTitle button:hover a {
+        color:#5A7670;
+    }
+    .landingPage .heroTitle button:hover {
+        font-size:20pt;
+    }
+    .landingPage .aboutRight {
+        background-position:center;
+    }
+    .landingPage .aboutLeft , .landingPage .productText{
+        padding:25px;
+    }
+    .landingPage .aboutLeft h2,.landingPage .productText h2{
+        font-size: 16pt;
+    }
+    .landingPage .aboutLeft p,.landingPage .productText p{
+        font-size: 11pt;
+    }
+    .landingPage .productAreaLeft{
+        background-position:center;
+    }
+    .landingPage .productText button a{
+        font-size: 8pt;
+    }
+
+    .landingPage .productText button a:hover{
+        font-size: 12pt;
+    }
+
+    .landingPage .product{
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:"productAreaLeft productText "
+                            "productAreaRight productAreaRight "   ;
+    }
+    .landingPage  .productAreaRight{
+        height:40vh;
+    }
+    .landingPage .productAreaRight .video-container::after {
+        
+        width:100%;
+        
+        
+    } 
+    .bestprice , .newarrival{
+        transform: translate(-80px ,-15px);
+        width:70px;
+        height:70px;
+    }
+    .landingPage .weekly {
+        background-color: black;
+        text-align:center;
+        justify-content: center;
+    }
+    
+    .landingPage .weeklyProduct {
+        width:100%;
+        padding:50px;
+        text-align:center;
+        justify-content: center;
+        background-color: burlywood;
+        
+    }
+    
+
+    
+
+}

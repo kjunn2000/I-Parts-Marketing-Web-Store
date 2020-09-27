@@ -1,0 +1,121 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/*Nav*/
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  height:70px;
+  border-bottom:1px solid #9fa8a3;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
+  
+  
+}
+
+.nav .nav-title:hover {
+  border-bottom : 1px solid black;
+}
+
+.nav a {
+  cursor: pointer;
+}
+
+.nav .middle h1{
+  color: #9fa8a3;
+  font-family: 'Courgette', cursive;
+  /* color: #c5e5cb; */
+  /* color: #e3e0cf; */
+}
+.nav ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.nav ul li a{
+  color:#9fa8a3;
+  font-family: 'Courgette', cursive;
+}
+
+.logInOutButton a{
+  border: 1px solid #9fa8a3;
+  border-radius : 5px;
+  transition : 0.3s all;
+  font-size: 15pt;
+  padding: 10px;
+  font-family: 'Courgette', cursive;
+  
+}
+
+.logInOutButton :hover {
+  background-color:#9fa8a3;
+  color: white;
+}
+
+.nav-responsive {
+  display:none;
+  padding-left:20px;
+}
+
+.nav Button {
+  color: #9fa8a3;
+  border: 1px solid #9fa8a3;
+  background-color: transparent;
+  z-index: 2 ;
+  
+}
+
+.nav Button:hover {
+  background-color: #e3e0cf;
+  border: 1px solid #9fa8a3;
+}
+
+
+.nav .middle h1 {
+  font-size: 20pt;
+  letter-spacing: 7px;
+}
+
+.nav-responsive ul{
+  list-style: none;
+}
+
+
+@media (max-width:720px) {
+  .nav .left{
+    display:none;
+  }
+  .nav .right{
+    display:none;
+  }
+
+  .nav{
+    display: flex;
+    padding:40px;
+  }
+
+  .nav .middle {
+    float:center;
+    padding-top:40px;
+  }
+  .nav .middle h1{
+    font-size:18pt;
+  }
+
+  .nav .middle img{
+    width:10px;
+    height:10px;
+  }
+
+  .nav-responsive {
+    display:flex;
+    position:fixed;
+    left:0;
+    z-index:2;
+    
+  }
+}

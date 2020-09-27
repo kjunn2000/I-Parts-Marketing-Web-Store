@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+.productPage .heroTitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size:22pt;
+}
+ 
+.productPage .filterBlock {
+    width:300px;
+    height:cover;
+    font-size:15pt;
+    font-family: 'Libre Baskerville', serif;
+    padding:20px;
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(to right bottom, #151617, #1e2022, #272b2e, #31363a, #3b4147, #3b4147, #3c4047, #3c4047, #32353a, #282a2d, #1f1f21, #151516);
+
+
+}
+
+
+
+.productPage .filterBlock .filterSlogan{
+    height:100px;
+    padding-top:10%;
+    font-size:18pt;
+    color:whitesmoke;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    background-color: tomato;
+    border-top-right-radius: 30px;
+    
+}
+
+.productPage .announcementArea {
+    height:22px;
+    color:white;
+    border-radius:10px;
+    font-family: 'Courgette', cursive;
+    text-align:center;
+    background-image: linear-gradient(to right bottom, #151617, #1e2022, #272b2e, #31363a, #3b4147, #3b4147, #3c4047, #3c4047, #32353a, #282a2d, #1f1f21, #151516);
+    background-image: linear-gradient(to right bottom, #e0efe6, #c6d7ce, #acc0b7, #93a9a1, #7a938b, #78928a, #75908a, #738f89, #86a39c, #99b7b0, #adcbc4, #c1e0d9);
+}
+
+.productPage .mobileFilterBlock {
+    display: none;
+
+}
+
+.productContainer {
+    padding:25px;
+    width:75%;
+}
+
+@media (max-width:720px) {
+
+    .productPage .filterBlock {
+        display: none;
+    }
+
+    .productPage .mobileFilterBlock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom:30px;
+    }
+
+    .productContainer {
+        width:100%;
+    }
+
+}
